@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_proposals">
+
+    <fragment
+        android:id="@+id/navigation_proposals"
+        android:name="com.program.feluxej.ui.proposals.ProposalsFragment"
+        android:label="@string/title_proposals"
+        tools:layout="@layout/fragment_proposals" >
+        <action
+            android:id="@+id/action_navigation_proposals_to_navigation_visits"
+            app:destination="@id/navigation_visits" />
+        <action
+            android:id="@+id/action_navigation_proposals_to_navigation_favorites"
+            app:destination="@id/navigation_favorites" />
+        <action
+            android:id="@+id/action_navigation_proposals_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_visits"
+        android:name="com.program.feluxej.ui.visits.VisitsFragment"
+        android:label="@string/title_visits"
+        tools:layout="@layout/fragment_visits" >
+        <action
+            android:id="@+id/action_navigation_visits_to_navigation_proposals"
+            app:destination="@id/navigation_proposals" />
+        <action
+            android:id="@+id/action_navigation_visits_to_navigation_favorites"
+            app:destination="@id/navigation_favorites" />
+        <action
+            android:id="@+id/action_navigation_visits_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.program.feluxej.ui.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_navigation_favorites_to_navigation_proposals"
+            app:destination="@id/navigation_proposals" />
+        <action
+            android:id="@+id/action_navigation_favorites_to_navigation_visits"
+            app:destination="@id/navigation_visits" />
+        <action
+            android:id="@+id/action_navigation_favorites_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.program.feluxej.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_favorites"
+            app:destination="@id/navigation_favorites" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_visits"
+            app:destination="@id/navigation_visits" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_proposals"
+            app:destination="@id/navigation_proposals" />
+    </fragment>
+</navigation>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Feluxej</string>
+    <string name="login">Login</string>
+    <string name="login_tenant">I am a Tenant</string>
+    <string name="login_owner">I am an Owner</string>
+    <string name="log_in">Log in</string>
+    <string name="en">EN</string>
+    <string name="de">DE</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="or">or</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_proposals">Proposals</string>
+    <string name="title_visits">Visits</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="visits">Visits</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="history">History</string>
+
+    <string name="data">Today 05.01.2023</string>
+    <string name="smart_visit">Smart visit</string>
+
+    <string name="listing_name">Listing name</string>
+    <string name="address">Address</string>
+    <string name="adr">Country, City, Green street 45/69</string>
+    <string name="unit_type">Unit type</string>
+    <string name="utype">Apartment</string>
+    <string name="unit_name">Unit name</string>
+    <string name="uname">Blablabla</string>
+    <string name="unit_number">Unit number</string>
+    <string name="unumber">45</string>
+
+</resources>
